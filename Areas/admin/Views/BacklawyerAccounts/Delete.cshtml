@@ -1,0 +1,208 @@
+﻿@model Lawave.Models.lawyerAccount
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>lawyerAccount</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.mail)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.mail)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.password)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.password)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PasswordSalt)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PasswordSalt)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.isCommunity)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.isCommunity)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.googleID)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.googleID)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.firstName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.firstName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.lastName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.lastName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.shot)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.shot)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.verifyPhotolawyer)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.verifyPhotolawyer)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.verifyPhotoFir)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.verifyPhotoFir)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.verifyPhotoSec)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.verifyPhotoSec)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.isPublic)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.isPublic)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.phone)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.phone)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.saying)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.saying)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.introduction)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.introduction)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.professional)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.professional)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.phoneCost)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.phoneCost)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.faceCost)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.faceCost)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.isCertification)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.isCertification)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rule)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rule)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.totalScore)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.totalScore)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.initDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.initDate)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>
